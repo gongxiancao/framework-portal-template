@@ -1,0 +1,1 @@
+command=start-product bash ./remote-call.sh

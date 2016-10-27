@@ -1,0 +1,1 @@
+echo remote TEST in $(pwd)

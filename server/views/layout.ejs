@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="framework">
+  <head>
+    <base href="/">
+    <title>framework frontend</title>
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Force using UTF8 to render -->
+    <meta charset="utf-8" />
+
+    <!-- build:css min/bower.css -->
+    <!-- inject:bower:css -->
+    <link rel="stylesheet" href="styles/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+    <!-- build:css min/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+
+  <body class="framework">
+    <%- include('partials/header') -%>
+    <%- body -%>
+    <%- include('partials/footer') -%>
+    <%- include('partials/copyright') -%>
+    <!-- build:js min/bower.js -->
+    <!-- bower:js -->
+    <script src="js/bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/bower_components/angular/angular.js"></script>
+    <script src="js/bower_components/angular-translate/angular-translate.js"></script>
+    <script src="js/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="js/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="js/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="js/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bower_components/angular-cookies/angular-cookies.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js min/app.js -->
+    <!-- inject:js -->
+    <script src="js/app/home/home.module.js"></script>
+    <script src="js/app/main/main.module.js"></script>
+    <script src="js/components/auth/auth.module.js"></script>
+    <script src="js/components/language/language.module.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/home/home.ctrl.js"></script>
+    <script src="js/app/main/main.ctrl.js"></script>
+    <script src="js/components/auth/auth.service.js"></script>
+    <script src="js/components/auth/interceptor.service.js"></script>
+    <script src="js/components/disable-animation/disable-animation.drtv.js"></script>
+    <script src="js/components/language/language.tpl.js"></script>
+    <script src="js/components/util/util.service.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+    <script type="text/javascript">
+    </script>
+    <%-defineContent('postScript')%>
+  </body>
+</html>

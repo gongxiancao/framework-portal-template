@@ -1,0 +1,49 @@
+@highlight-color: #F1330C;
+
+/* components */
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+@import "../components/util/util.less";
+@import "../components/language/language.less";
+
+/* app */
+@import "home/home.less";
+@import "main/main.less";
+
+
+body {
+  background-color: #F4F5F6;
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.navbar-brand {
+  padding-top: 10px;
+}
+.popover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  background-color: #F4F5F6;
+}
+
+.header {
+  .popover {
+    .arrow { /* fix bottom-left margin issue when use template popover*/
+      margin: 0;
+    }
+    .popover-content {
+      padding: 0;
+    }
+  }
+}
+
+.language-selector {
+  .popover {
+    width: 100px;
+  }
+}
