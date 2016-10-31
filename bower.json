@@ -1,12 +1,12 @@
 {
-  "name": "framework-frontend-template",
+  "name": "ofa-portal-template",
   "description": "",
   "main": "app.js",
   "authors": [
     "GongXian Cao <gongxiancao@hotmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/gongxiancao/framework-frontend-template",
+  "homepage": "https://github.com/gongxiancao/ofa-portal-template",
   "moduleType": [],
   "private": true,
   "ignore": [

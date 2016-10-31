@@ -1,7 +1,7 @@
 'use strict';
 
 var realModels = [];//_.keys(require('./MockModels'));
-var act = Promise.promisify(framework.seneca.act, {context: framework.seneca});
+var act = Promise.promisify(ofa.seneca.act, {context: ofa.seneca});
 function ModelFactory (language) {
   this.language = language;
 }
