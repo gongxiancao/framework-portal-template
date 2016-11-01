@@ -6,10 +6,10 @@ var bodyParser = require('body-parser'),
 module.exports.http = {
   middlewares: [
     function () {
-      return ofa.express.static(ofa.config.paths.public || '../.tmp/public');
+      return framework.express.static(framework.config.paths.public || '../.tmp/public');
     },
     ['/files', function () {
-      return ofa.express.static(ofa.config.paths.files || '../../files');
+      return framework.express.static(framework.config.paths.files || '../../files');
     }],
     bodyParser.json.bind(bodyParser),
     bodyParser.urlencoded.bind(bodyParser, { extended: false }),

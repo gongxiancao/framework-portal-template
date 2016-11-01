@@ -1,18 +1,18 @@
 'use strict';
 process.chdir(__dirname);
-var ofa = require('ofa')(); // jshint ignore:line
+var framework = require('ofa')(); // jshint ignore:line
 
-module.exports = ofa
-.use('ofa-env')
-.use('ofa-config')
-.use('ofa-seneca')
-.use('ofa-seneca-client')
-.use('ofa-service')
-.use('ofa-controller')
-.use('ofa-express')
-.use('ofa-express-view') // view need be use before route
-.use('ofa-express-policy')
-.use('ofa-express-route')
+module.exports = framework
+.use('env')
+.use('config')
+.use('seneca')
+.use('seneca-client')
+.use('service')
+.use('controller')
+.use('express')
+.use('express-view') // view need be use before route
+.use('express-policy')
+.use('express-route')
 .lift()
 .listen()
 .on('error', function (err) {

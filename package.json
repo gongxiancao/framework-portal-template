@@ -15,7 +15,7 @@
     "co": "4.6.0",
     "connect-multiparty": "2.0.0",
     "ejs": "^2.5.2",
-    "ofa": "1.0.0",
+    "ofa": "1.0.2",
     "ofa-config": "1.0.0",
     "ofa-controller": "1.0.0",
     "ofa-env": "1.0.0",
